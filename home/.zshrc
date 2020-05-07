@@ -4,6 +4,9 @@
 # Path to your oh-my-zsh installation.
 export ZSH="/home/mark/.oh-my-zsh"
 
+# Remove user@host from prompt
+export DEFAULT_USER=mark
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -73,6 +76,7 @@ plugins=(
   git-auto-fetch
   git-prompt
   docker
+  kube-ps1
 )
 
 source $ZSH/oh-my-zsh.sh
