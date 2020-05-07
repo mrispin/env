@@ -85,6 +85,9 @@ source $ZSH/oh-my-zsh.sh
 
 PROMPT='$(kube_ps1)'$PROMPT
 
+# Add kubens autocomplete
+autoload -U compinit && compinit
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
