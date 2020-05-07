@@ -83,6 +83,8 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+PROMPT='$(kube_ps1)'$PROMPT
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
