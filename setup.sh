@@ -17,3 +17,5 @@ chmod -R 755 ~/.oh-my-zsh/completions
 ln -sf ~/kubectx/completion/kubectx.zsh ~/.oh-my-zsh/completions/_kubectx.zsh
 ln -sf ~/kubectx/completion/kubens.zsh ~/.oh-my-zsh/completions/_kubens.zsh
 
+# Install z
+git clone https://github.com/agkozak/zsh-z $ZSH_CUSTOM/plugins/zsh-z
