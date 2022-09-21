@@ -1,7 +1,7 @@
 #!/bin/sh
 
 ln -sf ~/mrispin/env/home/.zshrc ~/.zshrc
-sudo apt update && sudo apt install zsh
+sudo apt update && sudo apt install -y zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
 
@@ -18,4 +18,4 @@ ln -sf ~/kubectx/completion/kubectx.zsh ~/.oh-my-zsh/completions/_kubectx.zsh
 ln -sf ~/kubectx/completion/kubens.zsh ~/.oh-my-zsh/completions/_kubens.zsh
 
 # Install z
-git clone https://github.com/agkozak/zsh-z $ZSH_CUSTOM/plugins/zsh-z
+git clone https://github.com/agkozak/zsh-z ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-z
