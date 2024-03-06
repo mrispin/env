@@ -1,0 +1,22 @@
+[user]
+	email = mark.rispin@cloudsphere.com
+	name = Mark Rispin
+	signingkey = 89B8CC5E94B20BE9
+[diff]
+	tool = vimdiff
+[pull]
+	rebase = true
+[commit]
+	gpgsign = true
+[gpg]
+	format = openpgp
+[maintenance]
+	repo = /home/mark/release/deployments
+	repo = /home/mark/charts/charts
+[rerere]
+	enabled = true
+	autoUpdate = true
+[branch]
+	sort = -committerdate
+[init]
+	defaultBranch = main

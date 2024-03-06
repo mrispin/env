@@ -1,0 +1,14 @@
+#PS_TIME="\A"
+#PS_DATE="\d"
+#PS_USER="\u"
+#PS_HOST="\h"
+#PS_GIT='__git_ps1 " (%s)")'
+
+GREEN="$(tput setaf 2)"
+BLUE="$(tput setaf 4)"
+CYAN="$(tput setaf 6)"
+YELLOW="$(tput setaf 3)"
+MAGENTA="$(tput setaf 5)"
+COLORRESET="$(tput sgr0)"
+
+PS1='\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}${CYAN}\D{%Y/%m/%d %H:%M} ${GREEN}\u@\h${COLORRESET}:${BLUE}\w${YELLOW}$(__git_ps1 "(%s)")${MAGENTA}($(kubectx -c):$(kubens -c))${COLORRESET}\n\$ '
